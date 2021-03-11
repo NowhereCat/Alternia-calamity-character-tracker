@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Alternia's Calamity - Character Tracker</title>
+    <link rel="stylesheet" href="css.css">
+  </head>
+  <body>
+
+    <header>
+      <h1>Alternia's Calamity - Character Tracker</h1>
+    </header>
+
+    <!-- <img src="Images/Tyrous.png" alt="" id="imageTest"> -->
+
+    <div id="divParent">
+      <button type="button"class="collapsible" name="button">Joiboy Nassus</button>
+      <div class="characterDivClass">
+        <div class="flex-container">
+          <div class="flex-child">
+            <label id="label_N_S_B">Name: Joiboy Nassus | Species: Troll | Blood Color: Violet</label>
+            <br>
+            <br>
+            <label id="label_Gender">Gender: Male</label>
+            <br>
+            <label id="label_Age">Age: 8 Sweeps</label>
+            <br>
+            <label id="label_Height">Height: 1.55cm</label>
+            <br>
+            <br>
+            <label id="label_Un_Tc">User name: aquaticDreamer | Text Color: #6a006a</label>
+            <br>
+            <label id="label_TypingQ">Typing quirk: All "w" are capitalised, "o" are always typed as "ô". Says "Dood" isntead of "Dude"</label>
+            <br>
+            <br>
+            <br>
+            <label id="label_S_C_A_D">Sign: Aquapio | Class: Knight | Aspect: Light | Dreamself: Prospit</label>
+            <br>
+            <br>
+            <label id="label_P_C_D">Planet: Land of Neon and Gears | Consorts: None | Denizen: Unkown</label>
+            <br>
+            <br>
+            <label id="label_StrifeDeck">Strife Deck: Gunkind, Knifekind</label>
+            <br>
+            <br>
+            <label id="label_Sylladex">Sylladex Modi: Puzzle</label>
+            <br>
+            <br>
+            <label id="label_Lusus_Guardian">Lusus: Leviathan</label>
+            <br>
+            <br>
+            <label id="label_Notes">Notes: </label>
+          </div>
+          <div class="flex-child">
+            <label>Stats:</label><br><br>
+            <label id="label_STAT_PL">Power Level: 10</label><br>
+            <label id="label_STAT_INT">Intelligence: 10</label><br>
+            <label id="label_STAT_WIS">Wisdom: 10</label><br>
+            <label id="label_STAT_VIT">Vitalidy: 10</label><br>
+            <label id="label_STAT_SPD">Speed: 10</label><br>
+            <label id="label_STAT_PCS">Precision: 10</label><br>
+            <label id="label_STAT_CHA">Charisma: 10</label>
+
+            <div id="canvasDiv">
+              <canvas id="myChart" width="300" height="300"></canvas>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <br>
+    </div>
+
+    <div id="divClone">
+
+    </div>
+
+    <div id="canvasDiv">
+      <hr>
+      <h2>Stats Comparison:</h2>
+      <canvas id="myChart2" width="300" height="300"></canvas>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js">
+
+    </script>
+    <script src="code.js"></script>
+
+  </body>
+</html>
