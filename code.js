@@ -257,7 +257,7 @@ var characterProfiles = [
     characterPlanet: "Land of Heat and Obsidian",
     characterConsorts: "None",
     characterDenizen: "Unknown",
-    characterStrifeDeck: "Clubkind",
+    characterStrifeDeck: "Clubkind, Percussionkind",
     characterSylladexModi: "Stack",
     characterLusus: "Rhyno/Bull",
     characterStats_PowerLevel: 2,
@@ -266,6 +266,66 @@ var characterProfiles = [
     characterStats_Vitality: 6,
     characterStats_Speed: 3,
     characterStats_Precision: 2.5,
+    characterStats_Charisma: 5,
+    characterNotes: "",
+    titleColor: "white"
+  },
+  {
+    characterName: "Mike Kirlia",
+    characterSpecies: "Human",
+    characterBloodColor: "Human Red",
+    characterUserName: "armoredMagician",
+    characterHemotyping: "#89CFF0",
+    characterTypingQuirk: 'Everything is properly typed, proper ponctuation',
+    characterGender: "Male",
+    characterAge: "16 years",
+    characterHeight: 1.65,
+    characterSign: "Aquapio",
+    characterClass: "Witch",
+    characterAspect: "Light",
+    characterDreamself: "Prospit",
+    characterPlanet: "Land of Frost and Faries",
+    characterConsorts: "None",
+    characterDenizen: "Unknown",
+    characterStrifeDeck: "Spearkind, Tridentkind, Wandkind and MagicGloveskind",
+    characterSylladexModi: "Library (Able to take groups of cards and separate them into 'Books', user is able to give it a label, index code anda description. And those Books are able to be put into shelves that have index code and titles. User is able to retrive any item from them)",
+    characterLusus: "Aunt Kirlia",
+    characterStats_PowerLevel: 5,
+    characterStats_Intelligence: 6,
+    characterStats_Wisdom: 8,
+    characterStats_Vitality: 4,
+    characterStats_Speed: 6,
+    characterStats_Precision: 4,
+    characterStats_Charisma: 5,
+    characterNotes: "",
+    titleColor: "black"
+  },
+  {
+    characterName: "Hush Legion",
+    characterSpecies: "Human",
+    characterBloodColor: "Human Red",
+    characterUserName: "urbanBard",
+    characterHemotyping: "#b7410e",
+    characterTypingQuirk: 'No captalization',
+    characterGender: "Male",
+    characterAge: "16 years",
+    characterHeight: 1.60,
+    characterSign: "Sagiries",
+    characterClass: "Rogue",
+    characterAspect: "Time",
+    characterDreamself: "Derse",
+    characterPlanet: "Land of Haze and Symphony",
+    characterConsorts: "None",
+    characterDenizen: "Unknown",
+    characterStrifeDeck: "Axekind, Wandkind",
+    characterSylladexModi: "List Search (Similar to Array, but you can search through the cards)",
+    characterLusus: "Grandpa Joel",
+    characterStats_PowerLevel: 5.5,
+    characterStats_Intelligence: 5,
+    characterStats_Wisdom: 5,
+    characterStats_Vitality: 6,
+    characterStats_Speed: 6,
+    characterStats_Precision: 4,
     characterStats_Charisma: 5,
     characterNotes: "",
     titleColor: "white"
@@ -384,9 +444,17 @@ function SetupCharacter(target, index){
        " | Denizen: " + characterProfiles[index].characterDenizen;
      }
 
+     var guardianString = "Lusus: ";
+
+     if(characterProfiles[index].characterSpecies == "Human"){
+       guardianString = "Guardian: ";
+     } else if(characterProfiles[index].characterSpecies == "Troll"){
+       guardianString = "Lusus: ";
+     }
+
      if(child1.children[i].id == "label_StrifeDeck") child1.children[i].innerHTML = "Strife Deck: " + characterProfiles[index].characterStrifeDeck;
      if(child1.children[i].id == "label_Sylladex") child1.children[i].innerHTML = "Sylladex Modi: " + characterProfiles[index].characterSylladexModi;
-     if(child1.children[i].id == "label_Lusus_Guardian") child1.children[i].innerHTML = "Lusus: " + characterProfiles[index].characterLusus;
+     if(child1.children[i].id == "label_Lusus_Guardian") child1.children[i].innerHTML = guardianString + characterProfiles[index].characterLusus;
      if(child1.children[i].id == "label_Notes") child1.children[i].innerHTML = "Notes: " + characterProfiles[index].characterNotes;
    }
    //console.log(child1.children);
