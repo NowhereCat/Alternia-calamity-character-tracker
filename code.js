@@ -604,6 +604,10 @@ function SetupCharacter(target, index){
       throw new Error('Bad Hex');
   }
 
+  //document.getElementById("canvasDiv_Comparison").style.display = "none";
+
+
+
 /*
  var dataTest = [50, 30, 30, 30, 30];
 
