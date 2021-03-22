@@ -2,6 +2,7 @@
 var characterProfiles = [
   {
     characterName: "Joiboy Nassus",
+    currentAct: "Act 1",
     characterSpecies: "Troll",
     characterBloodColor: "Violet",
     characterUserName: "aquaticDreamer",
@@ -32,6 +33,7 @@ var characterProfiles = [
   },
   {
     characterName: "Tyrous Markas (Act 1)",
+    currentAct: "Act 1",
     characterSpecies: "Troll",
     characterBloodColor: "Candy Red Mutant",
     characterUserName: "alignedAffiliation",
@@ -62,6 +64,7 @@ var characterProfiles = [
   },
   {
     characterName: "Tyrous Aiolia (Act 2)",
+    currentAct: "Act 2",
     characterSpecies: "Troll",
     characterBloodColor: "Olive",
     characterUserName: "ominousOblique",
@@ -92,6 +95,7 @@ var characterProfiles = [
   },
   {
     characterName: "Stella Capela",
+    currentAct: "Act 1",
     characterSpecies: "Troll",
     characterBloodColor: "Teal",
     characterUserName: "ditzyServant",
@@ -122,6 +126,7 @@ var characterProfiles = [
   },
   {
     characterName: "Garzim Gyrauu",
+    currentAct: "Act 1",
     characterSpecies: "Troll",
     characterBloodColor: "Purple",
     characterUserName: "serpentineMaster",
@@ -152,6 +157,7 @@ var characterProfiles = [
   },
   {
     characterName: "Lustra Fotuna",
+    currentAct: "Act 1",
     characterSpecies: "Troll",
     characterBloodColor: "Gold",
     characterUserName: "dualEucharists",
@@ -182,6 +188,7 @@ var characterProfiles = [
   },
   {
     characterName: "Serina Golfos",
+    currentAct: "Act 1",
     characterSpecies: "Troll",
     characterBloodColor: "Fuchsia",
     characterUserName: "underminedEmperess",
@@ -212,6 +219,7 @@ var characterProfiles = [
   },
   {
     characterName: "Heivan Nazeus",
+    currentAct: "Act 1",
     characterSpecies: "Troll",
     characterBloodColor: "Rust",
     characterUserName: "gloriousPersona",
@@ -242,6 +250,7 @@ var characterProfiles = [
   },
   {
     characterName: "Skaank Sabats",
+    currentAct: "Act 1",
     characterSpecies: "Troll",
     characterBloodColor: "Bronze",
     characterUserName: "maskedVisionary",
@@ -272,6 +281,7 @@ var characterProfiles = [
   },
   {
     characterName: "Mike Kirlia",
+    currentAct: "Act 1",
     characterSpecies: "Human",
     characterBloodColor: "Human Red",
     characterUserName: "armoredMagician",
@@ -302,10 +312,11 @@ var characterProfiles = [
   },
   {
     characterName: "Hush Legion",
+    currentAct: "Act 1",
     characterSpecies: "Human",
     characterBloodColor: "Human Red",
     characterUserName: "urbanBard",
-    characterHemotyping: "#b7410e",
+    characterHemotyping: "#4f0015",
     characterTypingQuirk: 'No captalization',
     characterGender: "Male",
     characterAge: "16 years",
@@ -602,6 +613,19 @@ function SetupCharacter(target, index){
           return 'rgba('+[(c>>16)&255, (c>>8)&255, c&255].join(',')+','+ alpha + ')';
       }
       throw new Error('Bad Hex');
+  }
+
+  //Show Story acts
+  function ShowAllCharacters(){
+    console.log("Showing all Characters");
+  }
+
+  function ShowAct1Characters(){
+    console.log("Showing Act 1 Characters");
+  }
+
+  function ShowAct2Characters(){
+    console.log("Showing Act 2 Characters");
   }
 
   //document.getElementById("canvasDiv_Comparison").style.display = "none";

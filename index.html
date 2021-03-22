@@ -8,7 +8,20 @@
   <body>
 
     <header>
-      <h1>Alternia's Calamity - Character Tracker</h1>
+      <div class="flex-container">
+        <div class="flex-child">
+          <h1>Alternia's Calamity - Character Tracker</h1>
+        </div>
+
+        <div class="flex-child" id="optionsDiv">
+          <div class="" id="buttonsDivID">
+            <button type="button" name="button" class="optionButton" onclick="ShowAllCharacters()">All</button>
+            <button type="button" name="button" class="optionButton" onclick="ShowAct1Characters()">Act 1</button>
+            <button type="button" name="button" class="optionButton" onclick="ShowAct2Characters()">Act 2</button>
+          </div>
+
+        </div>
+      </div>
     </header>
 
     <!-- <img src="Images/Tyrous.png" alt="" id="imageTest"> -->
@@ -85,6 +98,7 @@
           <!--<button type="button" name="button" onclick="">Comparasion</button> -->
           <div id="canvasDiv_Comparison">
             <canvas id="myChart2" width="300" height="300"></canvas>
+            <p>*Click on tags to hide character's Stats</p>
           </div>
 
         </div>
