@@ -7,7 +7,7 @@ var characterProfiles = [
     characterBloodColor: "Violet",
     characterUserName: "aquaticDreamer",
     characterHemotyping: "#6a006a",
-    characterTypingQuirk: 'All "w" are capitalised, "o" are always typed as "ô". Says "Dood" isntead of "Dude"',
+    characterTypingQuirk: 'All "w" are capitalised, "o" are always typed as "ô". Says "Dood" instead of "Dude"',
     characterGender: "Male",
     characterAge: "8 sweeps",
     characterHeight: 1.65,
@@ -430,7 +430,7 @@ function SetupCharacter(target, index){
 
      if(child1.children[i].id == "label_Gender") child1.children[i].innerHTML = "Gender: " + characterProfiles[index].characterGender;
      if(child1.children[i].id == "label_Age") child1.children[i].innerHTML = "Age: " + characterProfiles[index].characterAge;
-     if(child1.children[i].id == "label_Height") child1.children[i].innerHTML = "Height: " + characterProfiles[index].characterHeight + "cm";
+     if(child1.children[i].id == "label_Height") child1.children[i].innerHTML = "Height: " + characterProfiles[index].characterHeight + "m";
 
      if(child1.children[i].id == "label_Un_Tc") {
        child1.children[i].innerHTML =
