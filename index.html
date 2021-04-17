@@ -29,6 +29,8 @@
     <div id="divParent">
       <button type="button"class="collapsible" name="button">Joiboy Nassus</button>
       <div class="characterDivClass">
+        <img src="Images/Profile Pics/Joiboy.png" class="profileImageClass" id="profileImageID">
+        <img src="Images/Signs/Joiboy.png" class="signImageClass" id="signImageID">
         <div class="flex-container">
           <div class="flex-child">
             <label id="label_N_S_B">Name: Joiboy Nassus | Species: Troll | Blood Color: Violet</label>
@@ -92,15 +94,32 @@
       </div>
 
       <div class="flex-child">
-        <div id="canvasDiv">
-          <h2>Stats Comparison:</h2>
-          <!--<button type="button" name="button" onclick="">Comparasion</button> -->
-          <div id="canvasDiv_Comparison">
-            <canvas id="myChart2" width="300" height="300"></canvas>
-            <p>*Click on tags to hide character's Stats</p>
-          </div>
+        <div class="wrapper" style="margin: 0 auto; width: 800px; position: relative;">
+          <div id="canvasDiv">
+            <h2>Stats Comparison:</h2>
 
+            <div id="canvasDiv_Comparison">
+              <canvas id="myChart2" width="300" height="300"></canvas>
+              <p>*Click on tags to hide character's Stats</p>
+            </div>
+
+            <div style="position: absolute; top:150px; left:500px;">
+              <p>Legends:</p>
+              <p>Rank F: Low | level 1</p>
+              <p>Rank E: Low+ | level 2</p>
+              <p>Rank D: Mid- | level 3</p>
+              <p>Rank C: Mid | level 4</p>
+              <p>Rank B: Mid+ | level 5</p>
+              <p>Rank A: High | level 6</p>
+              <p>Rank S: High+ | level 7</p>
+              <p>Rank SS: Advanced | level 8</p>
+              <p>Rank SSS: Mastered | level 9</p>
+              <p>Rank MAX: Godlike | level 10</p>
+            </div>
+
+          </div>
         </div>
+
       </div>
     </div>
 

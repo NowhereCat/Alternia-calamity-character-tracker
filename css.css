@@ -70,3 +70,11 @@ header{
   outline: none;
   font-size: 15px;
 }
+
+.signImageClass{
+  width: 15%;
+}
+
+.profileImageClass{
+  width: 25%;
+}

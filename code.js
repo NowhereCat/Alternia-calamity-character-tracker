@@ -2,6 +2,7 @@
 var characterProfiles = [
   {
     characterName: "Joiboy Nassus",
+    characterImageURLString: "Joiboy.png",
     currentAct: "Act 1",
     characterSpecies: "Troll",
     characterBloodColor: "Violet",
@@ -22,8 +23,8 @@ var characterProfiles = [
     characterSylladexModi: "Puzzle",
     characterLusus: "Leviathan",
     characterStats_PowerLevel: 5.5,
-    characterStats_Intelligence: 8,
-    characterStats_Wisdom: 8,
+    characterStats_Intelligence: 6,
+    characterStats_Wisdom: 5,
     characterStats_Vitality: 5,
     characterStats_Speed: 7,
     characterStats_Precision: 2,
@@ -33,6 +34,7 @@ var characterProfiles = [
   },
   {
     characterName: "Tyrous Markas (Act 1)",
+    characterImageURLString: "Tyrous Act 1.png",
     currentAct: "Act 1",
     characterSpecies: "Troll",
     characterBloodColor: "Candy Red Mutant",
@@ -52,18 +54,19 @@ var characterProfiles = [
     characterStrifeDeck: "Whipkind",
     characterSylladexModi: "None",
     characterLusus: "None",
-    characterStats_PowerLevel: 7,
+    characterStats_PowerLevel: 6,
     characterStats_Intelligence: 5,
-    characterStats_Wisdom: 6,
-    characterStats_Vitality: 8,
-    characterStats_Speed: 7,
-    characterStats_Precision: 6,
+    characterStats_Wisdom: 5,
+    characterStats_Vitality: 6,
+    characterStats_Speed: 6,
+    characterStats_Precision: 5,
     characterStats_Charisma: 4.5,
     characterNotes: "",
     titleColor: "black"
   },
   {
     characterName: "Tyrous Aiolia (Act 2)",
+    characterImageURLString: "Tyrous Act 2.png",
     currentAct: "Act 2",
     characterSpecies: "Troll",
     characterBloodColor: "Olive",
@@ -83,18 +86,19 @@ var characterProfiles = [
     characterStrifeDeck: "Whipkind",
     characterSylladexModi: "Weight (it allows you to carry as many items as you want in multiple cards or even in a single one, no limitation on size or any of that. The only limitation is on how much you can carry, you have a weight limit set by the system equation, of which is: “Own weight*2 + 20 kilos”)",
     characterLusus: "None",
-    characterStats_PowerLevel: 7,
+    characterStats_PowerLevel: 6,
     characterStats_Intelligence: 5,
-    characterStats_Wisdom: 7,
-    characterStats_Vitality: 8,
-    characterStats_Speed: 7,
-    characterStats_Precision: 6.5,
+    characterStats_Wisdom: 6,
+    characterStats_Vitality: 6,
+    characterStats_Speed: 6,
+    characterStats_Precision: 5,
     characterStats_Charisma: 6,
     characterNotes: "",
     titleColor: "black"
   },
   {
     characterName: "Stella Capela",
+    characterImageURLString: "Stella.png",
     currentAct: "Act 1",
     characterSpecies: "Troll",
     characterBloodColor: "Teal",
@@ -119,13 +123,14 @@ var characterProfiles = [
     characterStats_Wisdom: 5,
     characterStats_Vitality: 6,
     characterStats_Speed: 7,
-    characterStats_Precision: 8,
+    characterStats_Precision: 6,
     characterStats_Charisma: 6,
     characterNotes: "",
     titleColor: "black"
   },
   {
     characterName: "Garzim Gyrauu",
+    characterImageURLString: "Garzim.png",
     currentAct: "Act 1",
     characterSpecies: "Troll",
     characterBloodColor: "Purple",
@@ -145,18 +150,19 @@ var characterProfiles = [
     characterStrifeDeck: "Rapier/swordkind",
     characterSylladexModi: "Selection Wheel",
     characterLusus: "Snake",
-    characterStats_PowerLevel: 8,
-    characterStats_Intelligence: 8,
-    characterStats_Wisdom: 6,
+    characterStats_PowerLevel: 6,
+    characterStats_Intelligence: 6,
+    characterStats_Wisdom: 5,
     characterStats_Vitality: 6,
     characterStats_Speed: 6.5,
     characterStats_Precision: 5,
-    characterStats_Charisma: 7,
+    characterStats_Charisma: 5,
     characterNotes: "",
     titleColor: "white"
   },
   {
     characterName: "Lustra Fotuna",
+    characterImageURLString: "Lustra.png",
     currentAct: "Act 1",
     characterSpecies: "Troll",
     characterBloodColor: "Gold",
@@ -177,17 +183,18 @@ var characterProfiles = [
     characterSylladexModi: "Array 2.0 (She can set Macros to take and place from specific cards or perform specific actions)",
     characterLusus: "Snail",
     characterStats_PowerLevel: 5,
-    characterStats_Intelligence: 8,
+    characterStats_Intelligence: 6,
     characterStats_Wisdom: 6,
-    characterStats_Vitality: 5,
+    characterStats_Vitality: 4,
     characterStats_Speed: 4,
-    characterStats_Precision: 7.5,
+    characterStats_Precision: 5,
     characterStats_Charisma: 5.5,
     characterNotes: "",
     titleColor: "white"
   },
   {
     characterName: "Serina Golfos",
+    characterImageURLString: "Serina.png",
     currentAct: "Act 1",
     characterSpecies: "Troll",
     characterBloodColor: "Fuchsia",
@@ -208,17 +215,18 @@ var characterProfiles = [
     characterSylladexModi: "Minecraft",
     characterLusus: "Unknown",
     characterStats_PowerLevel: 5.5,
-    characterStats_Intelligence: 9,
+    characterStats_Intelligence: 6,
     characterStats_Wisdom: 6,
-    characterStats_Vitality: 8,
+    characterStats_Vitality: 7,
     characterStats_Speed: 6,
-    characterStats_Precision: 7,
-    characterStats_Charisma: 4,
+    characterStats_Precision: 6,
+    characterStats_Charisma: 5,
     characterNotes: "",
     titleColor: "white"
   },
   {
     characterName: "Heivan Nazeus",
+    characterImageURLString: "Heivan.png",
     currentAct: "Act 1",
     characterSpecies: "Troll",
     characterBloodColor: "Rust",
@@ -239,10 +247,10 @@ var characterProfiles = [
     characterSylladexModi: "Alphabetic",
     characterLusus: "Piglet",
     characterStats_PowerLevel: 4.5,
-    characterStats_Intelligence: 5,
-    characterStats_Wisdom: 4,
-    characterStats_Vitality: 7,
-    characterStats_Speed: 5,
+    characterStats_Intelligence: 4,
+    characterStats_Wisdom: 3,
+    characterStats_Vitality: 6,
+    characterStats_Speed: 4,
     characterStats_Precision: 3,
     characterStats_Charisma: 2,
     characterNotes: "",
@@ -250,6 +258,7 @@ var characterProfiles = [
   },
   {
     characterName: "Skaank Sabats",
+    characterImageURLString: "Skaank.png",
     currentAct: "Act 1",
     characterSpecies: "Troll",
     characterBloodColor: "Bronze",
@@ -270,7 +279,7 @@ var characterProfiles = [
     characterSylladexModi: "Stack",
     characterLusus: "Rhyno/Bull",
     characterStats_PowerLevel: 2,
-    characterStats_Intelligence: 5,
+    characterStats_Intelligence: 4,
     characterStats_Wisdom: 3,
     characterStats_Vitality: 6,
     characterStats_Speed: 3,
@@ -281,6 +290,7 @@ var characterProfiles = [
   },
   {
     characterName: "Mike Kirlia",
+    characterImageURLString: "Mike.png",
     currentAct: "Act 1",
     characterSpecies: "Human",
     characterBloodColor: "Human Red",
@@ -300,11 +310,11 @@ var characterProfiles = [
     characterStrifeDeck: "Spearkind, Tridentkind, Wandkind and MagicGloveskind",
     characterSylladexModi: "Library (Able to take groups of cards and separate them into 'Books', user is able to give it a label, index code anda description. And those Books are able to be put into shelves that have index code and titles. User is able to retrive any item from them)",
     characterLusus: "Aunt Kirlia",
-    characterStats_PowerLevel: 5,
-    characterStats_Intelligence: 6,
-    characterStats_Wisdom: 8,
+    characterStats_PowerLevel: 4,
+    characterStats_Intelligence: 5,
+    characterStats_Wisdom: 4,
     characterStats_Vitality: 4,
-    characterStats_Speed: 6,
+    characterStats_Speed: 5,
     characterStats_Precision: 4,
     characterStats_Charisma: 5,
     characterNotes: "",
@@ -312,6 +322,7 @@ var characterProfiles = [
   },
   {
     characterName: "Hush Legion",
+    characterImageURLString: "Hush.png",
     currentAct: "Act 1",
     characterSpecies: "Human",
     characterBloodColor: "Human Red",
@@ -331,12 +342,12 @@ var characterProfiles = [
     characterStrifeDeck: "Axekind, Wandkind",
     characterSylladexModi: "List Search (Similar to Array, but you can search through the cards)",
     characterLusus: "Grandpa Joel",
-    characterStats_PowerLevel: 5.5,
+    characterStats_PowerLevel: 4,
     characterStats_Intelligence: 5,
-    characterStats_Wisdom: 5,
-    characterStats_Vitality: 6,
-    characterStats_Speed: 6,
-    characterStats_Precision: 4,
+    characterStats_Wisdom: 4,
+    characterStats_Vitality: 4,
+    characterStats_Speed: 4,
+    characterStats_Precision: 3,
     characterStats_Charisma: 5,
     characterNotes: "",
     titleColor: "white"
@@ -345,18 +356,44 @@ var characterProfiles = [
 
 /*
 The stats score are:
-1 - Low-
-2 - Low
-3 - Low+
-4 - Mid-
-5 - Mid
-6 - Mid+
-7 - High-
-8 - High
-9 - High+
-10 - Godlike/High++
-
+1 - Low               | F
+2 - Low+              | E
+3 - Mid-              | D
+4 - Mid               | C
+5 - Mid+              | B
+6 - High              | A
+7 - High+             | S
+8 - Advanced          | SS
+9 - Mastered          | SSS
+10 - Godlike & Beyond | MAX
 */
+
+var levelRanks = ["F", "E", "D", "C", "B", "A", "S", "SS", "SSS", "MAX"];
+
+var profilePicFolderPath = "Images/Profile Pics/";
+var signPicFolderPath = "Images/Signs/";
+
+function GetRank(input){
+  var output = "NULL";
+  for (var i = 0; i < levelRanks.length; i++) {
+    if(input < 1){
+      output = "FFF";
+      break;
+    } else if(input > 10){
+      output = levelRanks[9];
+      break;
+    }else{
+      if(input >= i + 1 && input < i + 2){
+        output = levelRanks[i];
+        break;
+      }
+    }
+
+  }
+  return output;
+}
+
+//console.log(GetRank(5.5));
 
 //document.getElementById("imageTest").style.width = "5%";
 //document.getElementById("imageTest").style.height = "5%";
@@ -377,51 +414,21 @@ function CloneFunction(){
 CloneFunction();
 
 function SetupCharacter(target, index){
-  var child1 = target.children[1].children[0].children[0];
-  var child2 = target.children[1].children[0].children[1];
+  var child1 = target.children[1].children[2].children[0];
+  var child2 = target.children[1].children[2].children[1];
+
+//  console.log(target.children[1].children[0].id);
+
+  for (var i = 0; i < target.children[1].children.length; i++) {
+    if(target.children[1].children[i].id == "profileImageID") target.children[1].children[i].src = profilePicFolderPath + characterProfiles[index].characterImageURLString;
+    if(target.children[1].children[i].id == "signImageID") target.children[1].children[i].src = signPicFolderPath + characterProfiles[index].characterImageURLString;
+
+  }
 
   target.children[0].innerHTML = characterProfiles[index].characterName;
 
-  //Children start
-  /*
-  child1.children[0].innerHTML =
-  "Name: " + characterProfiles[index].characterName +
-  " | Species: " + characterProfiles[index].characterSpecies +
-  " | Blood Color: " + characterProfiles[index].characterBloodColor;
-*/
-  //child1.children[3].innerHTML = "Gender: " + characterProfiles[index].characterGender;
-  //child1.children[5].innerHTML = "Age: " + characterProfiles[index].characterAge;
-
-  //child1.children[7].innerHTML = "Height: " + characterProfiles[index].characterHeight + "cm";
-/*
-  child1.children[10].innerHTML =
-   "Username: " + characterProfiles[index].characterUserName +
-   " | Text Color: " + characterProfiles[index].characterHemotyping;
-*/
-   //child1.children[12].innerHTML = "Typing Quirk: " + characterProfiles[index].characterTypingQuirk;
-/*
-   child1.children[16].innerHTML =
-   "Sign: " + characterProfiles[index].characterSign +
-   " | Class: " + characterProfiles[index].characterClass +
-   " | Aspect: " + characterProfiles[index].characterAspect +
-   " | Dreamself: " + characterProfiles[index].characterDreamself;
-
-   child1.children[19].innerHTML =
-   "Planet: " + characterProfiles[index].characterPlanet +
-   " | Consorts: " + characterProfiles[index].characterConsorts +
-   " | Denizen: " + characterProfiles[index].characterDenizen;
-*/
-   //child1.children[22].innerHTML = "Strife Deck: " + characterProfiles[index].characterStrifeDeck;
-   //child1.children[25].innerHTML = "Sylladex Modi: " + characterProfiles[index].characterSylladexModi;
-   //child1.children[28].innerHTML = "Lusus: " + characterProfiles[index].characterLusus;
-   //child1.children[31].innerHTML = "Notes: " + characterProfiles[index].characterNotes;
-
    for (var i = 0; i < child1.children.length; i++) {
-     /*
-     if(child1.children[i].id == "labelTest"){
-       child1.children[i].innerHTML = characterProfiles[index].characterName + " was tested";
-     }
-     */
+
      if(child1.children[i].id == "label_N_S_B"){
        child1.children[i].innerHTML = "Name: " + characterProfiles[index].characterName +
        " | Species: " + characterProfiles[index].characterSpecies +
@@ -468,36 +475,24 @@ function SetupCharacter(target, index){
      if(child1.children[i].id == "label_Lusus_Guardian") child1.children[i].innerHTML = guardianString + characterProfiles[index].characterLusus;
      if(child1.children[i].id == "label_Notes") child1.children[i].innerHTML = "Notes: " + characterProfiles[index].characterNotes;
    }
-   //console.log(child1.children);
-
-   //console.log(SetLabelText("Bah", "Testing"));
-
-   //Stats
-   //child2.children[3].innerHTML = "Power Level: " + characterProfiles[index].characterStats_PowerLevel;
-   //child2.children[5].innerHTML = "Intelligence: " + characterProfiles[index].characterStats_Intelligence;
-   //child2.children[7].innerHTML = "Wisdom: " + characterProfiles[index].characterStats_Wisdom;
-   //child2.children[9].innerHTML = "Vitality: " + characterProfiles[index].characterStats_Vitality;
-   //child2.children[11].innerHTML = "Speed: " + characterProfiles[index].characterStats_Speed;
-   //child2.children[13].innerHTML = "Precision: " + characterProfiles[index].characterStats_Precision;
-   //child2.children[15].innerHTML = "Charisma: " + characterProfiles[index].characterStats_Charisma;
 
    for (var i = 0; i < child2.children.length; i++) {
-     if(child2.children[i].id == "label_STAT_PL") child2.children[i].innerHTML = "Power Level: " + characterProfiles[index].characterStats_PowerLevel;
-     if(child2.children[i].id == "label_STAT_INT") child2.children[i].innerHTML = "Intelligence: " + characterProfiles[index].characterStats_Intelligence;
-     if(child2.children[i].id == "label_STAT_WIS") child2.children[i].innerHTML = "Wisdom: " + characterProfiles[index].characterStats_Wisdom;
-     if(child2.children[i].id == "label_STAT_VIT") child2.children[i].innerHTML = "Vitality: " + characterProfiles[index].characterStats_Vitality;
-     if(child2.children[i].id == "label_STAT_SPD") child2.children[i].innerHTML = "Speed: " + characterProfiles[index].characterStats_Speed;
-     if(child2.children[i].id == "label_STAT_PCS") child2.children[i].innerHTML = "Precision: " + characterProfiles[index].characterStats_Precision;
-     if(child2.children[i].id == "label_STAT_CHA") child2.children[i].innerHTML = "Charisma: " + characterProfiles[index].characterStats_Charisma;
+     if(child2.children[i].id == "label_STAT_PL") child2.children[i].innerHTML = "Power Level: " + GetRank(characterProfiles[index].characterStats_PowerLevel) + " (" + characterProfiles[index].characterStats_PowerLevel + ")";
+     if(child2.children[i].id == "label_STAT_INT") child2.children[i].innerHTML = "Intelligence: " +  GetRank(characterProfiles[index].characterStats_Intelligence) + " (" +characterProfiles[index].characterStats_Intelligence + ")";
+     if(child2.children[i].id == "label_STAT_WIS") child2.children[i].innerHTML = "Wisdom: " +  GetRank(characterProfiles[index].characterStats_Wisdom) + " (" +characterProfiles[index].characterStats_Wisdom + ")";
+     if(child2.children[i].id == "label_STAT_VIT") child2.children[i].innerHTML = "Vitality: " +  GetRank(characterProfiles[index].characterStats_Vitality) + " (" +characterProfiles[index].characterStats_Vitality + ")";
+     if(child2.children[i].id == "label_STAT_SPD") child2.children[i].innerHTML = "Speed: " +  GetRank(characterProfiles[index].characterStats_Speed) + " (" +characterProfiles[index].characterStats_Speed + ")";
+     if(child2.children[i].id == "label_STAT_PCS") child2.children[i].innerHTML = "Precision: " +  GetRank(characterProfiles[index].characterStats_Precision) + " (" +characterProfiles[index].characterStats_Precision + ")";
+     if(child2.children[i].id == "label_STAT_CHA") child2.children[i].innerHTML = "Charisma: " +  GetRank(characterProfiles[index].characterStats_Charisma) + " (" +characterProfiles[index].characterStats_Charisma + ")";
    }
 
    //Custom CSS
 
    target.children[0].style.backgroundColor = characterProfiles[index].characterHemotyping;
    target.children[0].style.color = characterProfiles[index].titleColor;
-   //console.log(target.children[0]);
+   //console.log(target.children[1].children[0]);
 
-   var ctx = target.children[1].children[0].children[1].children[16].children[0].getContext('2d');
+   var ctx = target.children[1].children[2].children[1].children[16].children[0].getContext('2d');
 
    ctx.canvas.parentNode.style.height = '300px';
    ctx.canvas.parentNode.style.width = '300px';
@@ -573,19 +568,19 @@ function SetupCharacter(target, index){
 
  });
 
- function addData(chart, label, color, data, order) {
-   var color1 = hexToRgbA(characterProfiles[i].characterHemotyping, 0.2);
-    var color2 = hexToRgbA(characterProfiles[i].characterHemotyping, 1);
- 		chart.data.datasets.push({
- 	    label: label,
-       backgroundColor: color1,
-       data: data,
-       order: order,
-       borderColor: color2,
-       fill: false
-     });
-     chart.update();
- }
+function addData(chart, label, color, data, order) {
+  var color1 = hexToRgbA(characterProfiles[i].characterHemotyping, 0.2);
+   var color2 = hexToRgbA(characterProfiles[i].characterHemotyping, 1);
+   chart.data.datasets.push({
+     label: label,
+      backgroundColor: color1,
+      data: data,
+      order: order,
+      borderColor: color2,
+      fill: false
+    });
+    chart.update();
+}
 
 //set all character to compare
   for (var i = 0; i < characterProfiles.length; i++) {
@@ -600,6 +595,8 @@ function SetupCharacter(target, index){
     ];
 
     addData(myChart2, characterProfiles[i].characterName, characterProfiles[i].characterHemotyping, statsArray, i);
+    //addData(heightChart, characterProfiles[i].characterName, characterProfiles[i].characterHemotyping, characterProfiles[i].characterHeight, i);
+    //labels.push(characterProfiles[i].characterName);
   }
 
   function hexToRgbA(hex, alpha){
@@ -630,19 +627,6 @@ function SetupCharacter(target, index){
 
   //document.getElementById("canvasDiv_Comparison").style.display = "none";
 
-
-
-/*
- var dataTest = [50, 30, 30, 30, 30];
-
- addData(myChart2, 'Group 3', 'rgba(0, 0, 255, 0.2)', dataTest, 3);
-
-
-/* Useless for now
-var parent = document.getElementById("divParent");
-var children = parent.children[1].children[0].children[0];
-console.log(children);
-*/
 //Collapse system
 var coll = document.getElementsByClassName("collapsible");
 var i;
