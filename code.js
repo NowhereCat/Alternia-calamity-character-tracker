@@ -3,7 +3,7 @@ var characterProfiles = [
   {
     characterName: "Joiboy Nassus",
     characterImageURLString: "Joiboy.png",
-    currentAct: "Act 1",
+    currentAct: "Act 2",
     characterSpecies: "Troll",
     characterBloodColor: "Violet",
     characterUserName: "aquaticDreamer",
@@ -29,6 +29,7 @@ var characterProfiles = [
     characterStats_Speed: 7,
     characterStats_Precision: 2,
     characterStats_Charisma: 4.5,
+    characterStats_Spirit: 4,
     characterNotes: "",
     titleColor: "white"
   },
@@ -61,6 +62,7 @@ var characterProfiles = [
     characterStats_Speed: 6,
     characterStats_Precision: 5,
     characterStats_Charisma: 4.5,
+    characterStats_Spirit: 5,
     characterNotes: "",
     titleColor: "black"
   },
@@ -93,13 +95,14 @@ var characterProfiles = [
     characterStats_Speed: 6,
     characterStats_Precision: 5,
     characterStats_Charisma: 6,
+    characterStats_Spirit: 5,
     characterNotes: "",
     titleColor: "black"
   },
   {
     characterName: "Stella Capela",
     characterImageURLString: "Stella.png",
-    currentAct: "Act 1",
+    currentAct: "Act 3",
     characterSpecies: "Troll",
     characterBloodColor: "Teal",
     characterUserName: "ditzyServant",
@@ -125,6 +128,7 @@ var characterProfiles = [
     characterStats_Speed: 7,
     characterStats_Precision: 6,
     characterStats_Charisma: 6,
+    characterStats_Spirit: 6,
     characterNotes: "",
     titleColor: "black"
   },
@@ -157,13 +161,14 @@ var characterProfiles = [
     characterStats_Speed: 6.5,
     characterStats_Precision: 5,
     characterStats_Charisma: 5,
+    characterStats_Spirit: 4,
     characterNotes: "",
     titleColor: "white"
   },
   {
     characterName: "Lustra Fotuna",
     characterImageURLString: "Lustra.png",
-    currentAct: "Act 1",
+    currentAct: "Act 3",
     characterSpecies: "Troll",
     characterBloodColor: "Gold",
     characterUserName: "dualEucharists",
@@ -189,13 +194,14 @@ var characterProfiles = [
     characterStats_Speed: 4,
     characterStats_Precision: 5,
     characterStats_Charisma: 5.5,
+    characterStats_Spirit: 3,
     characterNotes: "",
     titleColor: "white"
   },
   {
     characterName: "Serina Golfos",
     characterImageURLString: "Serina.png",
-    currentAct: "Act 1",
+    currentAct: "Act 2",
     characterSpecies: "Troll",
     characterBloodColor: "Fuchsia",
     characterUserName: "underminedEmperess",
@@ -212,7 +218,7 @@ var characterProfiles = [
     characterConsorts: "None",
     characterDenizen: "Unknown",
     characterStrifeDeck: "Tridentkind",
-    characterSylladexModi: "Minecraft",
+    characterSylladexModi: "Hierarchy",
     characterLusus: "Unknown",
     characterStats_PowerLevel: 5.5,
     characterStats_Intelligence: 6,
@@ -221,13 +227,14 @@ var characterProfiles = [
     characterStats_Speed: 6,
     characterStats_Precision: 6,
     characterStats_Charisma: 5,
+    characterStats_Spirit: 6,
     characterNotes: "",
     titleColor: "white"
   },
   {
     characterName: "Heivan Nazeus",
     characterImageURLString: "Heivan.png",
-    currentAct: "Act 1",
+    currentAct: "Act 3",
     characterSpecies: "Troll",
     characterBloodColor: "Rust",
     characterUserName: "gloriousPersona",
@@ -253,13 +260,14 @@ var characterProfiles = [
     characterStats_Speed: 4,
     characterStats_Precision: 3,
     characterStats_Charisma: 2,
+    characterStats_Spirit: 2,
     characterNotes: "",
     titleColor: "white"
   },
   {
     characterName: "Skaank Sabats",
     characterImageURLString: "Skaank.png",
-    currentAct: "Act 1",
+    currentAct: "Act 3",
     characterSpecies: "Troll",
     characterBloodColor: "Bronze",
     characterUserName: "maskedVisionary",
@@ -285,13 +293,14 @@ var characterProfiles = [
     characterStats_Speed: 3,
     characterStats_Precision: 2.5,
     characterStats_Charisma: 5,
+    characterStats_Spirit: 1,
     characterNotes: "",
     titleColor: "white"
   },
   {
     characterName: "Mike Kirlia",
     characterImageURLString: "Mike.png",
-    currentAct: "Act 1",
+    currentAct: "Act 5",
     characterSpecies: "Human",
     characterBloodColor: "Human Red",
     characterUserName: "armoredMagician",
@@ -317,13 +326,14 @@ var characterProfiles = [
     characterStats_Speed: 5,
     characterStats_Precision: 4,
     characterStats_Charisma: 5,
+    characterStats_Spirit: 5,
     characterNotes: "",
     titleColor: "black"
   },
   {
     characterName: "Hush Legion",
     characterImageURLString: "Hush.png",
-    currentAct: "Act 1",
+    currentAct: "Act 5",
     characterSpecies: "Human",
     characterBloodColor: "Human Red",
     characterUserName: "urbanBard",
@@ -349,6 +359,7 @@ var characterProfiles = [
     characterStats_Speed: 4,
     characterStats_Precision: 3,
     characterStats_Charisma: 5,
+    characterStats_Spirit: 4,
     characterNotes: "",
     titleColor: "white"
   }
@@ -398,17 +409,35 @@ function GetRank(input){
 //document.getElementById("imageTest").style.width = "5%";
 //document.getElementById("imageTest").style.height = "5%";
 
-function CloneFunction(){
+var actNumber = "Act 1";
+var showAllActs = false;
 
+function CloneFunction(){
   var itm;
   for (var i = 0; i < characterProfiles.length; i++) {
     itm = document.getElementById("divParent");
     var cln = itm.cloneNode(true);
-
-    SetupCharacter(cln, i);
-    document.getElementById("divClone").appendChild(cln);
+    //cln.style.display = "block";
+    if(characterProfiles[i].currentAct == actNumber && !showAllActs){
+      SetupCharacter(cln, i);
+      document.getElementById("divClone").appendChild(cln);
+    } else if(showAllActs){
+      SetupCharacter(cln, i);
+      document.getElementById("divClone").appendChild(cln);
+    }
   }
-  itm.remove();
+  //itm.style.display = "none";
+}
+
+function DeleteAll(){
+  var target = document.getElementById("divClone");
+  //console.log(target.firstChild);
+  while(target.firstChild){
+    target.removeChild(target.firstChild);
+  }
+
+  CloneFunction();
+
 }
 
 CloneFunction();
@@ -484,6 +513,7 @@ function SetupCharacter(target, index){
      if(child2.children[i].id == "label_STAT_SPD") child2.children[i].innerHTML = "Speed: " +  GetRank(characterProfiles[index].characterStats_Speed) + " (" +characterProfiles[index].characterStats_Speed + ")";
      if(child2.children[i].id == "label_STAT_PCS") child2.children[i].innerHTML = "Precision: " +  GetRank(characterProfiles[index].characterStats_Precision) + " (" +characterProfiles[index].characterStats_Precision + ")";
      if(child2.children[i].id == "label_STAT_CHA") child2.children[i].innerHTML = "Charisma: " +  GetRank(characterProfiles[index].characterStats_Charisma) + " (" +characterProfiles[index].characterStats_Charisma + ")";
+     if(child2.children[i].id == "label_STAT_SPT") child2.children[i].innerHTML = "Spirit: " +  GetRank(characterProfiles[index].characterStats_Spirit) + " (" +characterProfiles[index].characterStats_Spirit + ")";
    }
 
    //Custom CSS
@@ -492,7 +522,7 @@ function SetupCharacter(target, index){
    target.children[0].style.color = characterProfiles[index].titleColor;
    //console.log(target.children[1].children[0]);
 
-   var ctx = target.children[1].children[2].children[1].children[16].children[0].getContext('2d');
+   var ctx = target.children[1].children[2].children[1].children[18].children[0].getContext('2d');
 
    ctx.canvas.parentNode.style.height = '300px';
    ctx.canvas.parentNode.style.width = '300px';
@@ -504,20 +534,22 @@ function SetupCharacter(target, index){
    var statSpeed = characterProfiles[index].characterStats_Speed;
    var statPrecision = characterProfiles[index].characterStats_Precision;
    var statCharisma = characterProfiles[index].characterStats_Charisma;
+   var statSpirit = characterProfiles[index].characterStats_Spirit;
 
    var bgColor = characterProfiles[index].characterHemotyping;
 
    var myChart = new Chart(ctx, {
        type: 'radar',
        data: {
-           labels: ['Power Level', 'Intelligence', 'Wisdom', 'Vitality', 'Speed', 'Precision', 'Charisma'],
+           labels: ['Power Level', 'Intelligence', 'Wisdom', 'Vitality', 'Speed', 'Precision', 'Charisma', 'Spirit'],
            datasets: [{
                label: 'Status',
-               data: [statPowerLevel, statIntelligence, statWisdom, statVitality, statSpeed, statPrecision, statCharisma],
+               data: [statPowerLevel, statIntelligence, statWisdom, statVitality, statSpeed, statPrecision, statCharisma, statSpirit],
                backgroundColor: [
                    hexToRgbA(bgColor, 0.2)
                ],
                borderColor: [
+                   hexToRgbA(bgColor, 1),
                    hexToRgbA(bgColor, 1),
                    hexToRgbA(bgColor, 1),
                    hexToRgbA(bgColor, 1),
@@ -552,7 +584,7 @@ function SetupCharacter(target, index){
      type: 'radar',
      data: {
          datasets: [],
-       labels: ['Power Level', 'Intelligence', 'Wisdom', 'Vitality', 'Speed', 'Precision', 'Charisma']
+       labels: ['Power Level', 'Intelligence', 'Wisdom', 'Vitality', 'Speed', 'Precision', 'Charisma', "Spirit"]
      },
      options: {
           scale: {
@@ -569,10 +601,10 @@ function SetupCharacter(target, index){
  });
 
 function addData(chart, label, color, data, order) {
-  var color1 = hexToRgbA(characterProfiles[i].characterHemotyping, 0.2);
-   var color2 = hexToRgbA(characterProfiles[i].characterHemotyping, 1);
+  var color1 = hexToRgbA(color, 0.2);
+   var color2 = hexToRgbA(color, 1);
    chart.data.datasets.push({
-     label: label,
+      label: label,
       backgroundColor: color1,
       data: data,
       order: order,
@@ -582,7 +614,25 @@ function addData(chart, label, color, data, order) {
     chart.update();
 }
 
+function ResetData(chart){
+  //chart.data.datasets.pop();
+  //console.log(chart.data.datasets.length);
+  /*
+  chart.data.datasets.forEach(dataset => {
+    console.log("BEEP!");
+    chart.data.datasets.pop();
+    console.log(chart.data.datasets.length);
+  });
+  */
+  while(chart.data.datasets.length != 0){
+    chart.data.datasets.pop();
+  }
+  //console.log("DONE!");
+  chart.update();
+}
+
 //set all character to compare
+function SetStatsRadarSets(){
   for (var i = 0; i < characterProfiles.length; i++) {
     var statsArray = [
       characterProfiles[i].characterStats_PowerLevel,
@@ -591,13 +641,20 @@ function addData(chart, label, color, data, order) {
       characterProfiles[i].characterStats_Vitality,
       characterProfiles[i].characterStats_Speed,
       characterProfiles[i].characterStats_Precision,
-      characterProfiles[i].characterStats_Charisma
+      characterProfiles[i].characterStats_Charisma,
+      characterProfiles[i].characterStats_Spirit
     ];
-
-    addData(myChart2, characterProfiles[i].characterName, characterProfiles[i].characterHemotyping, statsArray, i);
+    if(characterProfiles[i].currentAct == actNumber && !showAllActs)
+      addData(myChart2, characterProfiles[i].characterName, characterProfiles[i].characterHemotyping, statsArray, i);
+    else if(showAllActs)
+      addData(myChart2, characterProfiles[i].characterName, characterProfiles[i].characterHemotyping, statsArray, i);
     //addData(heightChart, characterProfiles[i].characterName, characterProfiles[i].characterHemotyping, characterProfiles[i].characterHeight, i);
     //labels.push(characterProfiles[i].characterName);
   }
+}
+
+SetStatsRadarSets();
+
 
   function hexToRgbA(hex, alpha){
       var c;
@@ -615,14 +672,31 @@ function addData(chart, label, color, data, order) {
   //Show Story acts
   function ShowAllCharacters(){
     console.log("Showing all Characters");
+    showAllActs = true;
+    DeleteAll();
+    ResetData(myChart2);
+    SetStatsRadarSets();
+    SetListeners();
   }
 
   function ShowAct1Characters(){
     console.log("Showing Act 1 Characters");
+    actNumber = "Act 1";
+    showAllActs = false;
+    DeleteAll();
+    ResetData(myChart2);
+    SetStatsRadarSets();
+    SetListeners();
   }
 
   function ShowAct2Characters(){
     console.log("Showing Act 2 Characters");
+    actNumber = "Act 2";
+    showAllActs = false;
+    DeleteAll();
+    ResetData(myChart2);
+    SetStatsRadarSets();
+    SetListeners();
   }
 
   //document.getElementById("canvasDiv_Comparison").style.display = "none";
@@ -631,14 +705,18 @@ function addData(chart, label, color, data, order) {
 var coll = document.getElementsByClassName("collapsible");
 var i;
 
-for (var i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function(){
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if(content.style.display === "block"){
-      content.style.display = "none";
-    }else{
-      content.style.display = "block";
-    }
-  });
+function SetListeners(){
+  for (var i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function(){
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if(content.style.display === "block"){
+        content.style.display = "none";
+      }else{
+        content.style.display = "block";
+      }
+    });
+  }
 }
+
+SetListeners();
