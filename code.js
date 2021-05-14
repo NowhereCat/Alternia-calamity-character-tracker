@@ -30,7 +30,7 @@ var characterProfiles = [
     characterStats_Precision: 2,
     characterStats_Charisma: 4.5,
     characterStats_Spirit: 4,
-    characterNotes: "",
+    characterNotes: "His Lusus died when he was 3.5 sweeps old. Has an Aim Assist to help him aim his revolver.",
     titleColor: "white"
   },
   {
@@ -360,7 +360,7 @@ var characterProfiles = [
     characterStats_Precision: 3,
     characterStats_Charisma: 5,
     characterStats_Spirit: 4,
-    characterNotes: "",
+    characterNotes: "Big fan of bad monster movies. His favorite movie is Gorgo, although he does enjoy to hate the early Gamera movies and some of the bad early Godzilla movies.",
     titleColor: "white"
   }
 ];
