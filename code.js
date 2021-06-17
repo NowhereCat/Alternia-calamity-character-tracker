@@ -30,7 +30,7 @@ var characterProfiles = [
     characterStats_Precision: 2,
     characterStats_Charisma: 4.5,
     characterStats_Spirit: 4,
-    characterNotes: "His Lusus died when he was 3.5 sweeps old. Has an Aim Assist to help him aim his revolver.",
+    characterNotes: "His Lusus died when he was 3.5 sweeps old. \nHas an Aim Assist to help him aim his revolver.",
     titleColor: "white"
   },
   {
@@ -379,6 +379,18 @@ The stats score are:
 10 - Godlike & Beyond | MAX
 */
 
+var testObject = [{'one': 1, 'two': 2, 'three': 3},{'one': 2, 'two': 4, 'three': 6}];
+
+localStorage.setItem('testObject', JSON.stringify(testObject));
+var retrivedObject = localStorage.getItem('testObject');
+console.log('retrivedObject', JSON.parse(retrivedObject));
+
+function TestFunction(){
+  var pushObject = {'one': 3, 'two': 6, 'three': 9};
+  testObject.push(pushObject);
+  localStorage.setItem('testObject', JSON.stringify(testObject));
+}
+
 var levelRanks = ["F", "E", "D", "C", "B", "A", "S", "SS", "SSS", "MAX"];
 
 var profilePicFolderPath = "Images/Profile Pics/";
@@ -502,7 +514,7 @@ function SetupCharacter(target, index){
      if(child1.children[i].id == "label_StrifeDeck") child1.children[i].innerHTML = "Strife Deck: " + characterProfiles[index].characterStrifeDeck;
      if(child1.children[i].id == "label_Sylladex") child1.children[i].innerHTML = "Sylladex Modi: " + characterProfiles[index].characterSylladexModi;
      if(child1.children[i].id == "label_Lusus_Guardian") child1.children[i].innerHTML = guardianString + characterProfiles[index].characterLusus;
-     if(child1.children[i].id == "label_Notes") child1.children[i].innerHTML = "Notes: " + characterProfiles[index].characterNotes;
+     if(child1.children[i].id == "textarea_Notes") child1.children[i].innerHTML = "Notes: " + characterProfiles[index].characterNotes;
    }
 
    for (var i = 0; i < child2.children.length; i++) {
@@ -720,3 +732,5 @@ function SetListeners(){
 }
 
 SetListeners();
+
+ShowAllCharacters();
